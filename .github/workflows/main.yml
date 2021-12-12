@@ -41,5 +41,5 @@ jobs:
         
        # deploying on surge 
       - name: deploying on surge
-        run: surge ./shoestorebyhamzaali.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./shoestorebyhamzaali.surge.sh --token ${{secrets.surge_token}}
         
