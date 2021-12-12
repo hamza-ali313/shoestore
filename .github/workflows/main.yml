@@ -32,13 +32,9 @@ jobs:
           node-version: 12
          
          #install yarn
-     # - uses: Borales/actions-yarn@v2.3.0
-      #  with:
-       #   cmd: install
-          
-      # making the build file
-      - name: making the build file
-        run: npm run build
+      - uses: Borales/actions-yarn@v2.3.0
+        with:
+         cmd: install
         
     #installing surge
       - name: installing surge
