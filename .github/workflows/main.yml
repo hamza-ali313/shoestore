@@ -30,6 +30,10 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
+      - name: GitHub Action for npm in Alpine Linux
+  # You may pin to the exact commit or the version.
+      # uses: shinnn/actions-npm-alpine@44f5ff6c85813f570af1d7c7b6c461d589606583
+        uses: shinnn/actions-npm-alpine@1.0.0   
          
       - name: creating build
         run: npm run build
