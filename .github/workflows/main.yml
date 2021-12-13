@@ -27,23 +27,23 @@ jobs:
 
       # installing nodejs
       - name: installing nodejs
-        uses: sudo actions/setup-node@v2-beta
+        uses:  actions/setup-node@v2-beta
         with:
           node-version: 12
     
       - name: GitHub Action for Yarn
-        uses: sudo borales/actions-yarn@v2.3.0
+        uses:  borales/actions-yarn@v2.3.0
         with:
-           cmd: sudo install
+           cmd:  install
          
       - name: creating build
         run: sudo yarn build
         
     #installing surge
       - name: installing surge
-        run: sudo npm install --global surge
+        run:  npm install --global surge
         
        # deploying on surge 
       - name: deploying on surge
-        run: sudo surge ./build shoestorebyhamzaali.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run:  surge ./build shoestorebyhamzaali.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
