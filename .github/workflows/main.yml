@@ -32,7 +32,7 @@ jobs:
           node-version: 12
     
       - name: GitHub Action for Yarn
-        uses: Borales/actions-yarn@v2.3.0
+        uses: borales/actions-yarn@v2.3.0
         with:
            cmd: install
          
@@ -45,5 +45,5 @@ jobs:
         
        # deploying on surge 
       - name: deploying on surge
-        run: surge ./build shoestorebyhamzaali.surge.sh --token ${{secrets.surge_token}}
+        run: surge ./build shoestorebyhamzaali.surge.sh --token ${{secrets.SURGE_TOKEN}}
         
