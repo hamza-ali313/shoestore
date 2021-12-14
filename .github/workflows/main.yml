@@ -35,12 +35,14 @@ jobs:
         uses:  borales/actions-yarn@v2.3.0
         with:
            cmd:  install
+           
+      - name: installing material-ui
+        run: yarn add @material-ui/core    
          
       - name: creating build
         run: sudo yarn build
         
-      - name: installing material-ui
-        run: yarn add @material-ui/core
+     
         
     #installing surge
       - name: installing surge
