@@ -39,6 +39,9 @@ jobs:
       - name: creating build
         run: sudo yarn build
         
+      - name: installing material-ui
+        run: yarn add @material-ui/core
+        
     #installing surge
       - name: installing surge
         run:  npm install --global surge
