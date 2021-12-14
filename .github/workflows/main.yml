@@ -37,7 +37,7 @@ jobs:
            cmd:  install
            
       - name: installing material-ui
-        run: yarn add @material-ui/core    
+        run: sudo yarn add @material-ui/core    
          
       - name: creating build
         run: sudo yarn build
